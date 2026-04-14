@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para siempre y un poco mas</title>
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqgTokBFs1gw083vSjaaWKOWaj211Az1orQ&s">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.page {
+  background: #faf9f7;
+  min-height: 100vh;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #2c2826;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #1a1714;
+}
+
+.hero-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+}
+
+.hero-overlay {
+  position: relative; z-index: 3;
+  max-width: 740px; padding: 60px 40px;
+  text-align: center;
+}
+
+.ornament, .ornament-bottom {
+  display: block;
+  color: rgba(210,185,155,0.7);
+  font-size: 18px;
+  letter-spacing: 8px;
+}
+
+.ornament { margin-bottom: 32px; }
+.ornament-bottom { margin-top: 32px; }
+
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(17px, 2.4vw, 23px);
+  line-height: 1.85;
+  color: rgba(255,252,245,0.93);
+  text-shadow: 0 1px 20px rgba(0,0,0,0.4);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 60px 48px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.divider-line { flex: 1; height: 0.5px; background: #c9b99a; }
+.divider-diamond {
+  width: 7px;
+  height: 7px;
+  background: #c9b99a;
+  transform: rotate(45deg);
+}
+
+.gallery-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9a8874;
+  padding-bottom: 40px;
+}
+
+.gallery {
+  padding: 0 32px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.gallery-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.gallery-item.reverse { direction: rtl; }
+.gallery-item.reverse > * { direction: ltr; }
+
+.photo-frame {
+  position: relative;
+  aspect-ratio: 4/5;
+  background: #e8e2d9;
+  overflow: hidden;
+}
+
+.photo-frame::after {
+  content: '';
+  position: absolute; inset: 10px;
+  border: 0.5px solid rgba(201,185,154,0.4);
+}
+
+.photo-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.photo-frame:hover img { transform: scale(1.03); }
+
+.photo-caption { display: flex; flex-direction: column; gap: 16px; }
+
+.caption-num {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 42px;
+  color: #d6c4aa;
+}
+
+.caption-text {
+  font-size: 16px;
+  border-bottom: 0.5px solid #c9b99a;
+}
+
+.caption-desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4a4037;
+}
+
+.footer {
+  text-align: center;
+  padding: 48px 32px 64px;
+}
+
+.footer-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #9a8874;
+}
+
+.footer-heart {
+  display: block;
+  margin: 16px auto 0;
+  width: 14px; height: 14px;
+  background: #c9b99a;
+  clip-path: path('M7,12 C7,12 0,7 0,4 A3,3 0,0,1 7,3 A3,3 0,0,1 14,4 C14,7 7,12 7,12Z');
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<section class="hero">
+    <img class="hero-img" src="10.jpeg" alt="Foto principal">
+    <div class="hero-overlay">
+      <span class="ornament">— ✦ —</span>
+      <p class="quote">
+        Desde que llegaste a mi vida, todo cambió. Lo que antes no creía, hoy lo siento en cada momento con vos.<br><br>
+        Tu forma de ser, tu risa y tu presencia hacen que cualquier día, por más difícil que sea, se vuelva mejor. Cada instante a tu lado vale más que cualquier otra cosa.<br><br>
+        No me importa la distancia, el tiempo ni las condiciones, siempre voy a querer estar con vos. Porque en vos encontré algo único.<br><br>
+        Te amo en cada sentido posible: por lo que sos, por lo que fuiste y por lo que vas a ser. Y si tuviera que elegir mil veces, siempre te elegiría a vos.<br><br>
+        Gracias por hacer que la vida sea mucho más linda.<br>
+        <em>Te amo.</em>
+      </p>
+      <span class="ornament-bottom">— ✦ —</span>
+    </div>
+  </section>
+
+<div class="divider">
+<div class="divider-line"></div>
+<div class="divider-diamond"></div>
+<div class="divider-line"></div>
+</div>
+
+<p class="gallery-title">Nuestros momentos</p>
+
+<div class="gallery">
+
+<!-- 1 - Primera cita -->
+<div class="gallery-item">
+<div class="photo-frame"><img src="8.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">01</span>
+<p class="caption-text">Donde todo empezó…</p>
+<p class="caption-desc">
+Ese día no fue uno más. Fue el comienzo de algo que cambió todo para mí.
+Nuestra primera cita, los nervios, las miradas… todo quedó grabado para siempre.
+</p>
+</div>
+</div>
+
+<!-- 2 - Flor -->
+<div class="gallery-item reverse">
+<div class="photo-frame"><img src="1.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">02</span>
+<p class="caption-text">Un amor que no se marchita…</p>
+<p class="caption-desc">
+Esa flor de papel representa lo nuestro. Puede parecer frágil,
+pero no se marchita… como lo que siento por vos.
+</p>
+</div>
+</div>
+
+<!-- 3 - Carta -->
+<div class="gallery-item">
+<div class="photo-frame"><img src="2.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">03</span>
+<p class="caption-text">Palabras que guardo para siempre…</p>
+<p class="caption-desc">
+Cada palabra tuya tiene un valor enorme para mí.
+Es algo que voy a guardar toda la vida.
+</p>
+</div>
+</div>
+
+<!-- 4 - Relacion flor -->
+<div class="gallery-item reverse">
+<div class="photo-frame"><img src="5.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">04</span>
+<p class="caption-text">Más fuerte de lo que parece…</p>
+<p class="caption-desc">
+Aunque el papel sea frágil, lo nuestro no.
+Lo nuestro es fuerte, real… y eterno.
+</p>
+</div>
+</div>
+
+<!-- 5 - Dibujo -->
+<div class="gallery-item">
+<div class="photo-frame"><img src="4.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">05</span>
+<p class="caption-text">Hecho con amor…</p>
+<p class="caption-desc">
+Ese dibujo es más que algo lindo,
+es tiempo, cariño y amor puesto en algo para mí.
+</p>
+</div>
+</div>
+
+<!-- 6 - San Valentin -->
+<div class="gallery-item reverse">
+<div class="photo-frame"><img src="6.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">06</span>
+<p class="caption-text">Momentos especiales…</p>
+<p class="caption-desc">
+San Valentín fue solo una excusa,
+porque cada día con vos ya es especial.
+</p>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="gallery-item">
+<div class="photo-frame"><img src="3.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">07</span>
+<p class="caption-text">Pequeños gestos…</p>
+<p class="caption-desc">
+Cada detalle tuyo tiene algo único.
+Todo lo que viene de vos tiene un valor enorme.
+</p>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="gallery-item reverse">
+<div class="photo-frame"><img src="7.jpeg" loading="lazy"></div>
+<div class="photo-caption">
+<span class="caption-num">08</span>
+<p class="caption-text">Y seguimos escribiendo…</p>
+<p class="caption-desc">
+Nuestra historia sigue creciendo,
+y cada día suma algo más a lo que estamos construyendo juntos.
+</p>
+</div>
+</div>
+
+</div>
+
+<footer class="footer">
+<p class="footer-text">Para siempre y un poco más</p>
+<span class="footer-heart"></span>
+</footer>
+
+</div>
+</body>
+</html>
